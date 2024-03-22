@@ -11,6 +11,23 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
-        return -1;
+
+        int arrLength = arr.length;
+
+        int position = 0;
+
+        for (int i = 0; i < arrLength; i ++){
+
+            if( n == arr[i]){
+
+              return  position = i;
+            }
+
+            else {
+                position = -1;
+            }
+        }
+        return position;
     }
+    
 }
